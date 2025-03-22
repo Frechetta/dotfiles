@@ -9,9 +9,7 @@ config.color_scheme = 'Dark+'
 config.font = wezterm.font 'Consolas'
 config.font_size = 11
 
--- config.default_prog = { 'C:/WINDOWS/system32/wsl.exe', '-d', 'Ubuntu' }
--- config.default_cwd = '/home/eric'
-
+{% if yadm.os == "WSL" %}
 config.wsl_domains = {
   {
     name = 'WSL :: Ubuntu',
@@ -21,6 +19,7 @@ config.wsl_domains = {
 }
 
 config.default_domain = 'WSL :: Ubuntu'
+{% endif %}
 
 -- and finally, return the configuration to wezterm
 return config
