@@ -47,3 +47,7 @@ A-x = "extend_to_line_bounds"
 A-X = "shrink_to_line_bounds"
 x = "select_line_below"
 X = "select_line_above"
+
+[keys.normal.";"]
+g = ":sh helix-extensions.sh git"
+

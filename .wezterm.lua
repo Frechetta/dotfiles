@@ -9,6 +9,15 @@ config.color_scheme = 'Dark+'
 config.font = wezterm.font 'Consolas'
 config.font_size = 11
 
+config.wsl_domains = {
+  {
+    name = 'WSL :: Ubuntu',
+    distribution = 'Ubuntu',
+    default_cwd = '/home/eric',
+  },
+}
+
+config.default_domain = 'WSL :: Ubuntu'
 
 -- and finally, return the configuration to wezterm
 return config
