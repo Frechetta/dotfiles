@@ -1,7 +1,0 @@
-#!/bin/bash
-set -euo pipefail
-
-profile="$1"
-
-export AWS_PROFILE="$profile"
-
