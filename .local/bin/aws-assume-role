@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# https://repost.aws/knowledge-center/iam-assume-role-cli
+
+account_id=$1
+role_name=$2
+
+aws sts assume-role --role-arn "arn:aws:iam::$account_id:role/$role_name" --role-session-name ""$role_name-session"
+
